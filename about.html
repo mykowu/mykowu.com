@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+		<link href="css/reset.css" rel="stylesheet" type="text/css">
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<link href="css/lightbox.css" rel="stylesheet" type="text/css"/>
+		<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://cdn.jsdelivr.net/animatecss/2.1.0/animate.min.css"><!-- load animate -->
+		<script src="js/jquery-1.11.0.min.js"></script>
+	    <script src="js/lightbox.min.js"></script>
+		<script type="text/javascript">
+		<!-- Hero Floating -->
+		$(document).ready(function() {     
+        var hero = $('.hero');
+           function runIt() {
+               hero.animate({bottom:'+=20'}, 2000);
+               hero.animate({bottom:'-=20'}, 2000, runIt);
+           }
+        runIt();
+        });
+        
+		<!-- Parallax Scrolling -->
+		$(window).scroll(function(e){
+          parallax();
+        });
+        function parallax(){
+          var scrolled = $(window).scrollTop();
+          $('.bg').css('top',-(scrolled*0.02)+'px');
+        }
+		</script>
+		<title>MykoWu</title>
+	</head>
+	<body>
+		<header>
+            <div class="menu">
+                <div class="logo animated slideInDown">
+                    <a href="index.html">
+                        <img src="images/mykowu_logo.png" alt="MykoWu" title="MykoWu"/>
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="selectedworks animated slideInLeft">
+                            <a href="index.html">SELECTED WORKS</a>
+                        </li>
+                        <li class="selected about animated slideInLeft">
+                            <a href="about.html">ABOUT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+		</header>
+        <section>
+		<div id="work">
+		    <div class="workheader">
+		        ABOUT // DESIGNER // MICHAEL WU
+		        <a href="index.html"><< BACK</a>
+		    </div>
+		    <div class="hdivider">
+		    </div>
+            <div class="text">
+                <div class="bigcolumn">
+                    <h1>MICHAEL IS A HUMBLE GRAPHIC DESIGNER FROM THE ALWAYS SUNNY, SOUTHERN CALIFORNIA</h1>
+                    <p> I enjoy the sweet crunch of a perfectly ripe watermelon, a no-look pass for a soaring windmill dunk, and discovering beautifully functional design out in the wild. </p>
+                    <p>My love began at age 5 when my parents submitted my Teenage Mutant Ninja Turtle drawing to the local newspaper's 'Dandy Doodles' section. They went on to publish my little cartoon and send me a check for $1.00. That's right, $1.00 not $100. It wasn't much, but this was the launch of my artistic endevours.</p>
+                    <p>Fast forward through 10,000+ hours of training and experience to the present day universe and i've refined my talents to help clients, businesses, friends, family, and even man's best friend solve their design problems.</p>
+                    <p></p>
+                    <div class="halfcolumn">
+                        <h2>I CAN HELP WITH</h2>
+                        <ul>
+                        <li>Web Design</li>
+                        <li>Vector Illustrations</li>
+                        <li>Logos & Identity</li>
+                        <li>Advertisements & Banners</li>
+                        <li>Icons & Infographics</li>
+                        <li>Marketing & Business Cards</li>
+                        <li>Brand Development</li>
+                        <li>User Interface/Experience</li>
+                        <li>Publication Layout and Design</li>
+                        <li>Pixel Art</li>
+                        </ul>
+                    </div>
+                    <div class="halfcolumn" style="margin-left:50px; width:200px;">
+                        <h2>I USE THESE TOOLS</h2>
+                        <ul>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>InDesign</li>
+                        <li>Flash</li>
+                        <li>HTML 5</li>
+                        <li>CSS</li>
+                        <li>jQuery</li>
+                        <li>Wordpress & Bootstrap</li>
+                        <li>Pen, Pencil, Brush</li>
+                        <li>Nikon D3000</li>
+                        <li>Apple & Windows</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="smallcolumn">
+                    <img src="images/about/about_drawing.png" width="256px" alt="Self Portrait" title="Self Portrait"/>
+                    <ul style="text-align:right;width:55px;color:#F77700;float:left;">
+                        <li><em>NAME</em></li>
+                        <li><em>CONTACT</em></li>
+                        <li><em>DEGREE</em> </li>
+                        <li><em>STATUS</em></li>
+                        <li><em>SOCIAL</em></li>
+                    </ul>
+                    <ul>
+                        <li>Michael Wu</li>
+                        <li><a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mikewu1215@gmail.com&body=">mikewu1215@gmail.com</a></li>
+                        <li>Studio Art, Digital Art</li>
+                        <li>Available for Hire</li>
+                        <div class="button">
+                            <a class="redbubble" href="http://www.redbubble.com/people/mykowu" target="_blank"></a>
+                            <a class="instagram" href="http://instagram.com/mykowu" target="_blank"></a>
+                            <a class="linkedin" href="https://www.linkedin.com/profile/view?id=62818317&trk=nav_responsive_tab_profile_pic" target="_blank"></a>
+                            <a class="facebook" href="https://www.facebook.com/profile.php?id=6018277" target="_blank"></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+		</div>
+			<div class="clearfooter"></div>
+		</div>
+		</section>
+		<div class="hero animated fadeInUp"></div>
+		<div class="headerbg animated fadeIn"></div>
+		<div class="bg"></div>
+		<div class="goo"></div>
+	</body>
+</html>
