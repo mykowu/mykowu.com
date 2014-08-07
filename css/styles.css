@@ -1,0 +1,359 @@
+@font-face {
+	font-family: nevis;
+	src: url('../nevis.ttf');
+}
+html {
+	height: 100%;
+}
+body {
+    background: #000;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+a {
+    background-color: inherit;
+    color: #ffffff;
+}
+h1 {
+    font-family: nevis, helvetica, arial, sans-serif;
+	font-size: 26px;
+	color: #F77700;
+}
+h2 {
+    font-family: nevis, helvetica, arial, sans-serif;
+	font-size: 16px;
+	color: #F77700;
+}
+h3 {
+	font-size: 12px;
+    font-style: italic;
+}
+img {
+    max-width: 100%;
+}
+.bg {
+  background: url('../images/background_image.jpg') no-repeat;
+  position: fixed;
+  width: 100%;
+  height: 300%;
+  top:0;
+  left:0;
+  z-index: -5;
+}
+header {
+    float: left;
+    height: 100%;
+	top: 0px;
+	left: 0px;
+	width: 387px;
+
+}
+.headerbg {
+    background: url('../images/header_pattern.png') repeat;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	width: 387px;
+    z-index: -4;
+}
+.menu {
+	position: fixed;
+	width: 437px;
+	z-index: 2;
+}
+.logo {
+	height: 270px;
+	margin: -100px 0 0 56px;
+	width: 278px;
+
+}
+nav {
+    text-align: left;
+    padding: 11px 0px 0 159px;
+}
+nav ul {
+    font-family: nevis, helvetica, arial, sans-serif;
+	font-size: 14px;
+	padding: 0px;
+	margin: 0px;
+}
+nav ul li {
+	font-family: nevis, helvetica, arial, sans-serif;
+	padding-bottom: 15px;
+	letter-spacing: 3px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #cdcdcd;
+}
+nav ul li a:hover {
+    color: #F77700;
+}
+nav ul li.selected a {
+	color: #FFFFFF;
+}
+nav ul li.selected img {
+	margin: -2px 0 0 220px;
+	position: absolute;
+}
+.selectedworks {
+    animation-delay:0.0s; 
+    -moz-animation-delay:0.0s; 
+    -webkit-animation-delay:0.0s;
+}
+.about {
+    animation-delay:0.1s; 
+    -moz-animation-delay:0.1s; 
+    -webkit-animation-delay:0.1s;
+}
+.workheader {
+    color: #FFFFFF;
+    font-family: nevis, helvetica, arial, sans-serif;
+	font-size: 13px;
+	letter-spacing: 2px;
+}
+.workheader a {
+    color: #ffffff;
+    float: right;
+    text-decoration: none;
+    margin-right: 14px;
+}
+.workheader a:hover {
+    color: #F77700;
+    float: right;
+    text-decoration: none;
+    margin-right: 14px;
+}
+.caption {
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+.caption a {
+    color: #ffffff;
+    font-family: 'Quattrocento Sans', helvetica, arial, sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.caption a:hover {
+    color: #F77700;
+    text-decoration: none;
+}
+.hdivider {
+    background: #FFFFFF;
+    height: 6px;
+    margin: 5px 15px 15px 0;
+}
+#work {
+	padding: 30px 0 30px 445px;
+	width: 801px;
+	position: relative;
+	z-index: 1;
+}
+#work .images {
+    width: 786px;
+    margin-bottom: 30px;
+}
+#work .text {
+    background-color: inherit;
+    color: #FFFFFF;
+	float: left;
+	line-height: 30px;
+	position: relative;
+	width: 801px;
+}
+#work .text p {
+    font-family: 'Quattrocento Sans', helvetica, arial, sans-serif;
+	font-size: 16px;
+    margin: 10px 0 0 0;
+    line-height: 22px;
+}
+#work .text a {
+	text-decoration: none;
+}
+#work .text ul li {
+	font-family: 'Quattrocento Sans', helvetica, arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	list-style: square inside none;
+}
+#work .bigcolumn {
+    width: 480px;
+    float: left;
+}
+#work .halfcolumn {
+    width: 225px;
+    float: left;
+    margin: 10px 0 0 0;
+}
+#work .smallcolumn {
+	float: right;
+	padding: 0 14px 15px 30px;
+	position: relative;
+	width: 256px;
+}
+#work .smallcolumn ul {
+    float: right;
+    width: 190px;
+}
+#work .smallcolumn ul li {
+    list-style: none;
+}
+#work .smallcolumn ul li em {
+    color: #F77700;
+    font-family: nevis, helvetica, arial, sans-serif;
+    font-size: 10px;
+    line-height:1px;
+}
+#work .smallcolumn ul li a:hover {
+    color: #F77700;
+}
+
+
+.view {
+    width: 250px;
+    height: 150px;
+    margin: 0 15px 15px 0;
+    float: left;
+    border: 1px solid #262626;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: #000;
+}
+.view .mask, .view .content {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+    position: relative
+}
+.view h1 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    padding: 10px;
+    margin: 30px 0 0 0
+}
+.view a.info {
+    font-family: 'Quattrocento Sans', nevis, helvetica, arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 4px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 16px 0 15px 0;
+    width: 250px;
+    background: #000;
+    color: #F77700;
+}
+.view a.info:hover {
+
+}
+.view-first img { 
+    transition: all 0.2s linear;
+}
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(0 ,0, 0, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first a.info{
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first:hover img { 
+    transform: scale(1.1);
+} 
+.view-first:hover .mask { 
+    opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-first:hover a.info {
+    transition-delay: 0.2s;
+}
+
+.button {
+
+}
+.button a {
+    margin: 8px 10px 0 0;
+    float: left;
+}
+.button .redbubble {
+    background: url("../images/about/redbubble_icon.png") 0px 0px no-repeat;
+    height: 32px;
+    width: 32px;
+    display: block;
+}
+.button .redbubble:hover {
+    background: url('../images/about/redbubble_icon.png') 0px -32px no-repeat;
+}
+.button .instagram {
+    background: url("../images/about/instagram_icon.png") 0px 0px no-repeat;
+    height: 32px;
+    width: 32px;
+    display: block;
+}
+.button .instagram:hover {
+    background: url('../images/about/instagram_icon.png') 0px -32px no-repeat;
+}
+.button .linkedin {
+    background: url("../images/about/linkedin_icon.png") 0px 0px no-repeat;
+    height: 32px;
+    width: 32px;
+    display: block;
+}
+.button .linkedin:hover {
+    background: url('../images/about/linkedin_icon.png') 0px -32px no-repeat;
+}
+.button .facebook {
+    background: url("../images/about/facebook_icon.png") 0px 0px no-repeat;
+    height: 32px;
+    width: 32px;
+    display: block;
+}
+.button .facebook:hover {
+    background: url('../images/about/facebook_icon.png') 0px -32px no-repeat;
+}
+.clearfooter {
+height: 190px;
+clear: both;
+}
+.hero {
+    background: url('../images/myko_hero.png') no-repeat;
+	width: 657px;
+	height: 288px;
+	position: fixed;
+	left: -100px;
+	bottom: 110px;
+
+	animation-delay:0.8s; 
+    -moz-animation-delay:0.8s; 
+    -webkit-animation-delay:0.8s;
+}
+.goo {
+    background: url('../images/Goo_footer.png') no-repeat;
+	width: 2000px;
+	height: 148px;
+	position: fixed;
+	bottom: 0px;
+    z-index: 2;
+}

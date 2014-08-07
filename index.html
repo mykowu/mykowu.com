@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+		<link href="css/reset.css" rel="stylesheet" type="text/css">
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<link href="css/lightbox.css" rel="stylesheet" type="text/css"/>
+		<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://cdn.jsdelivr.net/animatecss/2.1.0/animate.min.css"><!-- load animate -->
+		<script src="js/jquery-1.11.0.min.js"></script>
+	    <script src="js/lightbox.min.js"></script>
+		<script type="text/javascript">
+		<!-- Hero Floating -->
+		$(document).ready(function() {     
+        var hero = $('.hero');
+           function runIt() {
+               hero.animate({bottom:'+=20'}, 2000);
+               hero.animate({bottom:'-=20'}, 2000, runIt);
+           }
+        runIt();
+        });
+        
+		<!-- Parallax Scrolling -->
+		$(window).scroll(function(e){
+          parallax();
+        });
+        function parallax(){
+          var scrolled = $(window).scrollTop();
+          $('.bg').css('top',-(scrolled*0.02)+'px');
+        }
+		</script>
+		<title>MykoWu</title>
+	</head>
+	<body>
+		<header>
+            <div class="menu">
+                <div class="logo animated slideInDown">
+                    <a href="index.html">
+                        <img src="images/mykowu_logo.png" alt="MykoWu" title="MykoWu"/>
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="selected selectedworks animated slideInLeft">
+                            <a href="index.html">SELECTED WORKS</a>
+                        </li>
+                        <li class="about animated slideInLeft">
+                            <a href="about.html">ABOUT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+		</header>
+        <section>
+		<div id="work">
+		    <div class="workheader">
+		        WELCOME TO MY PORTFOLIO
+		    </div>
+		    <div class="hdivider">
+		    </div>
+			<div class="view view-first">
+                <img src="images/pandacity/tile_pandacity.jpg" alt="Panda City"/>
+                <div class="mask">  
+                    <h1>PANDA CITY</h1>  
+                    <a href="pandacity.html" class="info">View Project</a>  
+                </div> 
+			</div>
+			<div class="view view-first">
+                <img src="images/quyenmakeup/tile_quyenmakeup.jpg" alt="Quyen Makeup Branding"/>
+                <div class="mask">  
+                    <h1>QUYEN MAKEUP</h1>  
+                    <a href="quyenmakeup.html" class="info">View Project</a>  
+                </div> 
+			</div>
+			<div class="view view-first">
+                <img src="images/puredazzle/tile_puredazzle.jpg" alt="puredazzle"/>
+                <div class="mask">  
+                    <h1>PURE DAZZLE</h1>  
+                    <a href="puredazzle.html" class="info">View Project</a>  
+                </div> 
+			</div>
+			<div class="view view-first">
+                <img src="images/dimeadozenclothing/tile_dimeadozenclothing.jpg" alt="dimeadozenclothing"/>
+                <div class="mask">  
+                    <h1>DIMEADOZEN CLOTHING</h1>  
+                    <a href="dimeadozenclothing.html" class="info">View Project</a>  
+                </div> 
+			</div>
+			<div class="view view-first">
+                <img src="images/rorshaq/tile_rorshaq.jpg" alt="Rorshaq"/>
+                <div class="mask">  
+                    <h1>RORSHAQ</h1>  
+                    <a href="rorshaq.html" class="info">View Project</a>  
+                </div> 
+			</div>
+			<div class="view view-first">
+                <img src="images/osexpress/tile_osexpress.jpg" alt="OneScreen Express"/>
+                <div class="mask">  
+                    <h1>ONESCREEN EXPRESS</h1>  
+                    <a href="osexpress.html" class="info">View Project</a>  
+                </div> 
+			</div>
+			<div class="view view-first">
+                <img src="images/mobile/tile_mobile.jpg" alt="mobile design"/>
+                <div class="mask">  
+                    <h1>MOBILE UI/UX</h1>  
+                    <a href="mobile.html" class="info">View Project</a>  
+                </div> 
+			</div>
+			<div class="view view-first">
+                <img src="images/marketingmaterial/tile_marketingmaterial.jpg" alt="marketing material"/>
+                <div class="mask">  
+                    <h1>MARKETING MATERIAL</h1>  
+                    <a href="marketingmaterial.html" class="info">View Project</a>  
+                </div> 
+			</div>
+			<div class="view view-first">
+                <img src="images/brandguide/tile_brandguide.jpg" alt="OneScreen Branding Guide"/>
+                <div class="mask">  
+                    <h1>BRANDING GUIDE</h1>  
+                    <a href="brandguide.html" class="info">View Project</a>  
+                </div> 
+			</div>
+			<div class="view view-first">
+                <img src="images/icons/tile_icons.jpg" alt="icons"/>
+                <div class="mask">  
+                    <h1>ICONS & INFOGRAPHICS</h1>  
+                    <a href="icons.html" class="info">View Project</a>  
+                </div> 
+			</div>		
+			<div class="view view-first">
+                <img src="images/nigiri/tile_nigiri.png" alt="The Creamsicles of Nigiri"/>
+                <div class="mask">  
+                    <h1>THE CREAMSICLES OF NIGIRI</h1>
+                    <a href="nigiri.html" class="info">View Project</a>  
+                </div> 
+			</div>
+			<div class="view view-first">
+                <img src="images/hero/tile_hero.jpg" alt="hero"/>
+                <div class="mask">  
+                    <h1>MYKO WU HERO</h1>  
+                    <a href="hero.html" class="info">View Project</a>  
+                </div> 
+			</div>
+			<div class="clearfooter"></div>
+		</div>
+		</section>
+		<div class="hero animated fadeInUp"></div>
+		<div class="headerbg animated fadeIn"></div>
+		<div class="bg"></div>
+		<div class="goo"></div>
+	</body>
+</html>
