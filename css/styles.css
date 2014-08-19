@@ -238,22 +238,24 @@ nav ul li.selected img {
 .view h1 {
     text-transform: uppercase;
     color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 20px;
-    padding: 10px;
-    margin: 30px 0 0 0
+    text-align: right;
+    position: absolute;
+    font-size: 24px;
+    padding: 71px 13px 55px 0;
+    bottom: 0px;
+    width: 237px;
 }
 .view a.info {
     font-family: 'Quattrocento Sans', nevis, helvetica, arial, sans-serif;
-    font-size: 10px;
-    letter-spacing: 4px;
+    font-size: 11px;
+    letter-spacing: 3px;
     display: inline-block;
     text-decoration: none;
-    padding: 16px 0 15px 0;
-    width: 250px;
-    background: #000;
-    color: #F77700;
+    padding: 11px 10px 10px 110px;
+    width: 131px;
+    margin-top: 100px;
+    background-color: #F77700;
+    color: #FFF;
 }
 .view a.info:hover {
 
@@ -263,7 +265,7 @@ nav ul li.selected img {
 }
 .view-first .mask {
     opacity: 0;
-    background-color: rgba(0 ,0, 0, 0.7); 
+    background-color: rgba(0 ,0, 0, 0.8); 
     transition: all 0.4s ease-in-out;
 }
 .view-first h2 {
