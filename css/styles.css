@@ -350,6 +350,7 @@ clear: both;
     -webkit-animation-delay:0.8s;
 }
 .goo {
+    pointer-events: none;
 	width: 2000px;
 	height: 148px;
 	position: fixed;
