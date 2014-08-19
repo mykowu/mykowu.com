@@ -350,7 +350,6 @@ clear: both;
     -webkit-animation-delay:0.8s;
 }
 .goo {
-    background: url('../images/Goo_footer.png') no-repeat;
 	width: 2000px;
 	height: 148px;
 	position: fixed;
