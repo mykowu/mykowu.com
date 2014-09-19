@@ -107,6 +107,11 @@ nav ul li.selected img {
     -moz-animation-delay:0.1s; 
     -webkit-animation-delay:0.1s;
 }
+.store {
+    animation-delay:0.2s; 
+    -moz-animation-delay:0.2s; 
+    -webkit-animation-delay:0.2s;
+}
 .workheader {
     color: #FFFFFF;
     font-family: nevis, helvetica, arial, sans-serif;
