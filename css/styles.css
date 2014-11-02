@@ -2,16 +2,60 @@
 	font-family: nevis;
 	src: url('../nevis.ttf');
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width:768px) and (max-width: 979px) {
     section #work {
         width: 534px;
     }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 767px) {
     section #work {
         width: 267px;
     }
 }
+@media screen and (max-width: 600px) {
+    section #work {
+        width: 267px;
+    }
+    body header {
+        height: 87px;
+    }
+    header .menu {
+        position: relative;
+    }
+    .menu .logo {
+        width: 253px;
+        margin: -170px 0 0 20px;
+    }
+    .menu nav {
+        padding: 0px 0px 0px 22px;
+    }
+    nav ul li {
+        float: left;
+        padding: 0 20px 0 0;
+    }
+    nav ul li a {
+        letter-spacing: 0px;
+    }
+    section #work {
+        padding: 105px 0 0 0;
+        margin: 0 auto;
+    }
+    section #work .text .bigcolumn {
+        width: 300px;
+        margin-bottom: 25px;
+    }
+    section #work .text .bigcolumn .halfcolumn {
+        margin-left: 0px !important;
+    }
+    section #work .text .smallcolumn {
+        float: none;
+        padding: 0px;
+    }
+    .goo, .hero, .headerbg, .workheader, .hdivider {
+        visibility: hidden;
+    }
+}
+
 html {
 	height: 100%;
 }
